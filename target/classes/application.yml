@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+    enabled: true
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    default-schema: public
+    liquibase-schema: public
+    user: sa
+    password: sa
+server:
+  port: 4030
